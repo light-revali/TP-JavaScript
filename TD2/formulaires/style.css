@@ -1,0 +1,28 @@
+#google{
+    /*On modifie les dimensions de l'image pour la rendre plus petite*/
+    width: 270px;
+    height: 90px;
+}
+
+hr{
+    /*On ajoute une bordure au séparateur*/
+    border: 1px solid black;
+}
+
+#champ1{
+    /*On ajoute une bordure au champ*/
+    border: 1px solid black;
+    /*On donne un arrondi sur les coins de la zone de texte*/
+    border-radius: 3px;
+    /*On modifie la largeur*/
+    width: 210px;
+}
+
+#champ2{
+    /*On ajoute une bordure au champ*/
+    border: 1px solid black;
+    /*On donne un arrondi sur les coins de la zone de texte*/
+    border-radius: 3px;
+    /*On modifie la largeur*/
+    width: 130px;
+}

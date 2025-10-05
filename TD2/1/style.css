@@ -1,0 +1,23 @@
+tbody img{
+    /*Modification des dimensions de l'image*/
+    width: 60px;
+    height: 50px;
+}
+
+#titre{
+    /*Ajout d'une couleur de fond pour la case en haut du tableau et changement de la couleur du texte*/
+    background-color: #181818;
+    color: white;
+}
+
+#button{
+    /*On ajoute une bordure au bouton convertir et on arrondi ses angles*/
+    border: black 3px solid;
+    border-radius: 3px;
+}
+
+table{
+    /*On aligne les éléments du tableau au centre des cases et on affiche les bordures*/
+    text-align: center;
+    border: black 1px solid;
+}

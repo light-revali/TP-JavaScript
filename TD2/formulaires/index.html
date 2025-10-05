@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <link rel="stylesheet" href="style.css"/>
+            <title>Formulaire</title>
+        </head>
+    <body>
+        <!--On créé un div pour différencier le menu des autres sections de la page html-->
+        <div id="menu">
+            <!--On crée des checkbox pour chaque section de la page html-->
+            <label><input type="checkbox" class="toggle" value="topsection"> Lien et images</label><br>
+            <label><input type="checkbox" class="toggle" value="midsection"> Des éléments !</label><br>
+            <label><input type="checkbox" class="toggle" value="botsection"> Barres de progression</label><br>
+        </div>
+        <!--Début du formulaire-->
+        <form>
+            <!--On créé un div pour différencier la première section des autres-->
+            <div id="topsection">
+                <!--On crée un titre pour cette section-->
+                <h1>Lien et images</h1>
+                <!--On crée un lien vers le site wikipedia.org avec le libelé "La page principale de Wikipedia"-->
+                <a href="https://wikipedia.org" target="_blank">La page principale de Wikipedia</a><br><br>
+                <!--On affiche une image (logo google) à partir d'un dossier se situant dans l'arborescence du site-->
+                <img src="../images/google.png" id="google"/>
+            </div>
+
+            <!--Séparateur-->
+            <hr>
+            <!--On créé un div pour différencier la seconde section des autres-->
+            <div id="midsection">
+                <!--On crée un titre pour cette section-->
+                <h1>Des éléments !</h1>
+                <!--On crée une zone de texte avec le message suivant affiché en placeholder "Premiers pas avec Javascript"-->
+                <input type="text" placeholder="Premiers pas avec Javascript" id="champ1"/>
+                
+                <!--On passe deux lignes-->
+                <br><br>
+                
+                <!--On crée trois zones d'input de type radio (un bouton sélectionnable sur les trois présents)-->
+                <input type="radio" name="choix" value="1" id="radio1"/>Choix N°1
+                <input type="radio" name="choix" value="2" id="radio2"/>Choix N°2
+                <input type="radio" name="choix" value="3" id="radio3"/>Choix N°3
+
+                <!--On passe deux lignes-->
+                <br><br>
+
+                <!--On crée une zone de texte de type password afin d'afficher les caractères entré comme des points (comme quand on entre un mot de passe : on "cache" les vrais caractères)-->
+                <input type="password" value="Password" id="champ2"/>
+
+                <!--On passe deux lignes-->
+                <br><br>
+
+                <!--On crée une zone d'entrée pour le volume sous forme d'une barre que l'on peu glisser-->
+                <input type="range" id="volume" name="volume" min="0" max="11" value="0"/> Volume<br>
+                <!--On écrit la valeur actuelle du volume (modifiée par la suite dans le js)-->
+                <span id="volval">0</span>
+
+                <!--On passe une lignes-->
+                <br>
+                
+                <!--On créé une checkbox avec un label (dont le rôle est définit dans le js et sert à Mute et rendre inactive la barre de volume)-->
+                <label for="ouinon">Une case à cocher </label><input type="checkbox" id="ouinon"/>
+
+                <!--On passe deux lignes-->
+                <br><br>
+
+                <!--On crée une zone de texte pour une date avec un label-->
+                <label>Date :</label><input type="date" id="date" name="date"/>
+                
+                <!--On passe deux lignes-->
+                <br><br>
+
+                <!--On crée un bouton pour envoyer le formulaire-->
+                <input type="submit" value="Ok"/>
+            </div>
+
+            <!--Séparateur-->
+            <hr>
+            
+            <!--On créé un div pour différencier la troisième section des autres-->
+            <div id="botsection">
+                <!--On créé un titre pour cette section-->
+                <h1>Barres de progression</h1>
+
+                <!--On crée une barre de progression avec un label-->
+                <label>Téléchargement en cours : </label><progress id="progress" max="100" value="50"></progress>
+
+                <!--On passe deux lignes-->
+                <br><br>
+                <!--On crée une autre barre de progression avec un label avec des valeurs pour représenter la capacité du disque dur : -->
+                <!--vert si <= 60, jaune si entre 60 et 85 et rouge si > 85-->
+                <label>Espace disponible : </label><meter id="meter" min="0" max="100" value="50" high="85" low="60" optimum="30">
+            </div>
+            <script src="script.js"></script>
+        </form>
+    </body>
+</html>

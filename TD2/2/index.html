@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <link rel="stylesheet" href="style.css">
+            <title>Devises 2</title>
+        </head>
+    <body>
+        <!--Création d'un tableau avec des doubles bordures-->
+        <table border="2">
+            <!--Création de l'en-tête'du tableau-->
+            <thead>
+                <!--Création d'une ligne du tableau-->
+                <tr>
+                    <!--Création de la case-->
+                    <th colspan="3" id="titre">Convertisseur</th>
+                </tr>
+            </thead>
+            <!--Création du corps du tableau-->
+            <tbody>
+                <!--Création d'une ligne du tableau-->
+                <tr>
+                    <!--Création des 3 cases-->
+                    <td><img src="../images/euro.png"></td>
+                    <td>Euros</td>
+                    <!--Création du champ de texte-->
+                    <td><input type="number" id="euros"></td>
+                </tr>
+                <!--Création d'une ligne du tableau-->
+                <tr>
+                    <!--Création des 3 cases-->
+                    <td><img src="../images/usd.png"></td>
+                    <td>Dollar Américain</td>
+                    <!--Création du champ de texte (désactivé grâce à disabled)-->
+                    <td><input type="number" id="usd" disabled></td>
+                </tr>
+                <!--Création d'une ligne du tableau-->
+                <tr>
+                    <!--Création des 3 cases-->
+                    <td><img src="../images/aud.png"></td>
+                    <td>Dollar Australien</td>
+                    <!--Création du champ de texte (désactivé grâce à disabled)-->
+                    <td><input type="number" id="aud" disabled></td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="script.js"></script>
+    </body>
+</html>
